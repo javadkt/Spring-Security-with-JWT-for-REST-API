@@ -17,7 +17,7 @@ public class JwtUtil {
 
     private static final long VALIDITY_TIME_MS = 10 * 24 * 60 * 60 * 1000;// 10 days Validity
     //private static final long VALIDITY_TIME_MS = 2 * 60 * 60 * 1000; // 2 hours  validity
-    private final String SECRET_KEY = "U2FsdGVkX1+0m6q6HbCwtO+CDl+EEvx0cB4sQr2DFDY=";
+    private final String SECRET_KEY = "UEE2FsdB4G=";
 
     public String generateToken(UserDetails userDetails) {
 
