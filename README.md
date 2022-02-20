@@ -1,5 +1,5 @@
 ## Spring Security with JWT for REST API
-Application to demonstrate Spring Security for authentication/authorization with JWT for RESTfull application. Add the DB details in application.properties and application will create a user table in DB upon server startup.
+Application to demonstrate Spring Security for authentication/authorization with JWT for RESTfull application. Add the DB details in `application.properties` and application will create a user table in DB upon server startup.
 Security is disabled for user Registration and Authoriztion API requests with the endpoints `/auth` and `/registeruser` respecitvely(file: WebSecurityConfig.java). 
 
 ### Technology Stack
