@@ -31,7 +31,7 @@ When security is enabled, none of the REST API will be accessesble directly.
 To test security access `http://localhost:8080/health` API and you should get a forbidden/Access denied error. 
 In order to access these secured API you must first obtain a token. Tokens can be obtained by passing a valid username and password.
 
-username and password are stored in user table. To add user call below `POST` API 
+username and password are stored in user table. Password will be encrypted using `BCryptPasswordEncoder`. To add user call below `POST` API (Windows users: Import below curl command as raw text in postman)
 
 ```
 curl --location --request POST 'http://localhost:8080/registeruser' \
@@ -67,7 +67,7 @@ After receiving this token you must provide the token in the request-header of e
 curl command (replace xxx.xxx.xxx with the token that you received in the above API) and you should be able to access the API which will return `OK`.
 
 ```
-curl --location --request GET 'http://localhost:8080/health' \ --header 'Authorization: Bearer xxx.xxx.xxx'
+curl --location --request GET 'http://localhost:8080/health' --header 'Authorization: Bearer xxx.xxx.xxx'
 ``` 
  
 
