@@ -47,7 +47,7 @@ curl --location --request POST 'http://localhost:8080/registeruser' \
 ```
 <br/>
 
-To get a token call `POST` API below with a valid userId and password. For example you may use the following curl command to get a token 
+To get a token call `POST` API below with a valid userId and password. For example you may use the following curl command to get a JWT token. 
 
 ```
 curl --location --request POST 'http://localhost:8080/auth' \
